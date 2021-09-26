@@ -49,7 +49,7 @@ EXAMPLE
   $ quick-strap create <project name>
 ```
 
-_See code: [src/commands/create.js](https://github.com/Documents/quick-strap/blob/v1.0.0/src/commands/create.js)_
+_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strap/blob/v1.0.0/src/commands/create.js)_
 
 ## `quick-strap help [COMMAND]`
 
