@@ -1,0 +1,49 @@
+{
+  "name": "quick-strap",
+  "description": "A Zero-config cli to help you bootstrap web projects",
+  "version": "0.0.0",
+  "author": "sidwebworks",
+  "bin": {
+    "quick-strap": "./bin/run"
+  },
+  "bugs": "https://github.com/sidwebworks/quick-strap/issues",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ejs": "^3.1.6",
+    "execa": "^5.1.1",
+    "inquirer": "^8.1.5",
+    "listr": "^0.14.3",
+    "pkg-install": "^1.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/Documents/quick-strap",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "quick-strap",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "Documents/quick-strap",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
