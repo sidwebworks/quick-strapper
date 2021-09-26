@@ -1,10 +1,14 @@
 {
-  "name": "quick-strap",
+  "name": "@sidwebworks/quick-strap",
   "description": "A Zero-config cli to help you bootstrap web projects",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "author": "sidwebworks",
   "bin": {
     "quick-strap": "./bin/run"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "bugs": "https://github.com/sidwebworks/quick-strap/issues",
   "dependencies": {
@@ -15,7 +19,9 @@
     "listr": "^0.14.3",
     "pkg-install": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@oclif/dev-cli": "^1"
+  },
   "engines": {
     "node": ">=8.0.0"
   },
