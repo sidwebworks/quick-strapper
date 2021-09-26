@@ -1,20 +1,21 @@
 {
-  "name": "@sidwebworks/quick-strap",
+  "name": "quick-strapper",
   "description": "A Zero-config cli to help you bootstrap web projects",
   "version": "1.0.1",
   "author": "sidwebworks",
   "bin": {
-    "@sidwebworks/quick-strap": "bin/run",
-    "quick-strap": "bin/run"
+    "quick-strapper": "bin/run"
   },
   "publishConfig": {
     "access": "public"
   },
-  "bugs": "https://github.com/sidwebworks/quick-strap/issues",
+  "bugs": "https://github.com/sidwebworks/quick-strapper/issues",
   "dependencies": {
+    "@oclif/command": "^1.8.0",
     "chalk": "^4.1.2",
     "ejs": "^3.1.6",
     "execa": "^5.1.1",
+    "figlet": "^1.5.2",
     "inquirer": "^8.1.5",
     "listr": "^0.14.3",
     "pkg-install": "^1.0.0"
@@ -31,7 +32,7 @@
     "/oclif.manifest.json",
     "/src"
   ],
-  "homepage": "https://github.com/sidwebworks/quick-strap",
+  "homepage": "https://github.com/sidwebworks/quick-strapper",
   "keywords": [
     "oclif"
   ],
@@ -39,12 +40,12 @@
   "main": "src/index.js",
   "oclif": {
     "commands": "./src/commands",
-    "bin": "quick-strap",
+    "bin": "quick-strapper",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
-  "repository": "https://github.com/sidwebworks/quick-strap",
+  "repository": "https://github.com/sidwebworks/quick-strapper",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint .",

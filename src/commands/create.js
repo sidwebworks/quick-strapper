@@ -3,18 +3,18 @@ const chalk = require("chalk");
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
-const { createProject } = require("../utils/createProject");
+const createProject = require("../utils/createProject");
 const { isEmpty } = require("../utils/isEmpty");
-const { normalizeStr } = require("../utils/normalizeStr");
+const normalizeStr = require("../utils/normalizeStr");
 const Listr = require("listr");
 const intializeGit = require("../utils/intializeGit");
 const { projectInstall } = require("pkg-install");
-
+const figlet = require("figlet");
 
 class CreateCommand extends Command {
-  static description = "Start `quick-strap` CLI";
+  static description = "Start `quick-strapper` CLI";
 
-  static examples = [`$ quick-strap create <project name>`];
+  static examples = [`$ quick-strapper create <project name>`];
 
   static flags = {
     help: flags.help({ char: "h" }),
@@ -36,6 +36,8 @@ class CreateCommand extends Command {
   static args = [{ name: "name" }];
 
   async run() {
+    console.log("Hi! 👋  Welcome quick-strapper!");
+
     const { flags, args } = this.parse(CreateCommand);
 
     const userFlags = Object.keys(flags).filter((el) => flags[el] === true);
@@ -158,6 +160,15 @@ class CreateCommand extends Command {
       await tasks.run();
     } catch (err) {
       this.error(err);
+    } finally {
+      figlet("Thank you!", function (err, data) {
+        if (err) {
+          console.log("Something went wrong...");
+          console.dir(err);
+          return;
+        }
+        console.log(data);
+      });
     }
   }
 }

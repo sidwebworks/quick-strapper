@@ -1,9 +1,8 @@
 const fs = require("fs");
 const path = require("path");
-const { render } = require("./renderEjs");
+const render = require("./renderEjs");
 const SKIP_FILES = ["node_modules", ".template.json"];
-
-module.exports = async (templatePath, projectName) => {
+const createProject = (templatePath, projectName) => {
   const CURRENT_DIR = process.cwd();
 
   // read all files/folders (1 level) from template folder
@@ -38,3 +37,5 @@ module.exports = async (templatePath, projectName) => {
     }
   });
 };
+
+module.exports = createProject;
