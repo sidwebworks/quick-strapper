@@ -1,12 +1,12 @@
-quick-strap
+quick-strapper
 ===========
 
 A Zero-config cli to help you bootstrap web projects
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/quick-strap.svg)](https://www.npmjs.com/package/@sidwebworks/quick-strap)
-[![Downloads/week](https://img.shields.io/npm/dw/quick-strap.svg)](https://www.npmjs.com/package/@sidwebworks/quick-strap)
-[![License](https://img.shields.io/npm/l/quick-strap.svg)](https://github.com/sidwebworks/quick-strap/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/quick-strapper.svg)](https://www.npmjs.com/package/@sidwebworks/quick-strapper)
+[![Downloads/week](https://img.shields.io/npm/dw/quick-strapper.svg)](https://www.npmjs.com/package/@sidwebworks/quick-strapper)
+[![License](https://img.shields.io/npm/l/quick-strapper.svg)](https://github.com/sidwebworks/quick-strapper/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -15,29 +15,29 @@ A Zero-config cli to help you bootstrap web projects
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @sidwebworks/quick-strap
-$ quick-strap COMMAND
+$ npm install -g quick-strapper
+$ quick-strapper COMMAND
 running command...
-$ quick-strap (-v|--version|version)
-@sidwebworks/quick-strap/1.0.1 linux-x64 node-v14.17.6
-$ quick-strap --help [COMMAND]
+$ quick-strapper (-v|--version|version)
+quick-strapper/1.0.1 linux-x64 node-v14.17.6
+$ quick-strapper --help [COMMAND]
 USAGE
-  $ quick-strap COMMAND
+  $ quick-strapper COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`quick-strap create [NAME]`](#quick-strap-create-name)
-* [`quick-strap help [COMMAND]`](#quick-strap-help-command)
+* [`quick-strapper create [NAME]`](#quick-strapper-create-name)
+* [`quick-strapper help [COMMAND]`](#quick-strapper-help-command)
 
-## `quick-strap create [NAME]`
+## `quick-strapper create [NAME]`
 
-Start `quick-strap` CLI
+Start `quick-strapper` CLI
 
 ```
 USAGE
-  $ quick-strap create [NAME]
+  $ quick-strapper create [NAME]
 
 OPTIONS
   -g, --git         Initialize a git repository
@@ -46,18 +46,18 @@ OPTIONS
   -t, --typescript  Setup Typescript
 
 EXAMPLE
-  $ quick-strap create <project name>
+  $ quick-strapper create <project name>
 ```
 
-_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strap/blob/v1.0.1/src/commands/create.js)_
+_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strapper/blob/v1.0.1/src/commands/create.js)_
 
-## `quick-strap help [COMMAND]`
+## `quick-strapper help [COMMAND]`
 
-display help for quick-strap
+display help for quick-strapper
 
 ```
 USAGE
-  $ quick-strap help [COMMAND]
+  $ quick-strapper help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
