@@ -1,7 +1,7 @@
 {
   "name": "quick-strapper",
   "description": "A Zero-config cli to help you bootstrap web projects",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "sidwebworks",
   "bin": {
     "quick-strapper": "bin/run"

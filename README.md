@@ -19,7 +19,7 @@ $ npm install -g quick-strapper
 $ quick-strapper COMMAND
 running command...
 $ quick-strapper (-v|--version|version)
-quick-strapper/1.0.1 linux-x64 node-v14.17.6
+quick-strapper/1.0.2 linux-x64 node-v14.17.6
 $ quick-strapper --help [COMMAND]
 USAGE
   $ quick-strapper COMMAND
@@ -49,7 +49,7 @@ EXAMPLE
   $ quick-strapper create <project name>
 ```
 
-_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strapper/blob/v1.0.1/src/commands/create.js)_
+_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strapper/blob/v1.0.2/src/commands/create.js)_
 
 ## `quick-strapper help [COMMAND]`
 
