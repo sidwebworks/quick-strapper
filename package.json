@@ -1,10 +1,11 @@
 {
   "name": "@sidwebworks/quick-strap",
   "description": "A Zero-config cli to help you bootstrap web projects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "sidwebworks",
   "bin": {
-    "quick-strap": "./bin/run"
+    "@sidwebworks/quick-strap": "bin/run",
+    "quick-strap": "bin/run"
   },
   "publishConfig": {
     "access": "public"

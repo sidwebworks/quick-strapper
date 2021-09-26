@@ -19,7 +19,7 @@ $ npm install -g @sidwebworks/quick-strap
 $ quick-strap COMMAND
 running command...
 $ quick-strap (-v|--version|version)
-@sidwebworks/quick-strap/1.0.0 linux-x64 node-v14.17.6
+@sidwebworks/quick-strap/1.0.1 linux-x64 node-v14.17.6
 $ quick-strap --help [COMMAND]
 USAGE
   $ quick-strap COMMAND
@@ -49,7 +49,7 @@ EXAMPLE
   $ quick-strap create <project name>
 ```
 
-_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strap/blob/v1.0.0/src/commands/create.js)_
+_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strap/blob/v1.0.1/src/commands/create.js)_
 
 ## `quick-strap help [COMMAND]`
 
