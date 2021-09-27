@@ -1,5 +1,4 @@
 const { Command, flags } = require("@oclif/command");
-const chalk = require("chalk");
 const fs = require("fs");
 const inquirer = require("inquirer");
 const path = require("path");
@@ -10,6 +9,7 @@ const Listr = require("listr");
 const intializeGit = require("../utils/intializeGit");
 const { projectInstall } = require("pkg-install");
 const figlet = require("figlet");
+const chalk = require("chalk");
 
 class CreateCommand extends Command {
   static description = "Start `quick-strapper` CLI";
@@ -36,7 +36,11 @@ class CreateCommand extends Command {
   static args = [{ name: "name" }];
 
   async run() {
-    console.log("Hi! 👋  Welcome quick-strapper!");
+    this.log(
+      chalk.cyan(
+        figlet.textSync("QUICK STRAPPER", { horizontalLayout: "full" })
+      )
+    );
 
     const { flags, args } = this.parse(CreateCommand);
 
@@ -158,17 +162,21 @@ class CreateCommand extends Command {
       ]);
 
       await tasks.run();
+
+      this.log(
+        chalk.greenBright.bold(
+          `\nTo start, cd into \`${chalk.cyanBright.bold(projectName)}\` `
+        )
+      );
+
+      this.log(
+        chalk.cyan(figlet.textSync("Thank you!", { horizontalLayout: "full" }))
+      );
     } catch (err) {
-      this.error(err);
-    } finally {
-      figlet("Thank you!", function (err, data) {
-        if (err) {
-          console.log("Something went wrong...");
-          console.dir(err);
-          return;
-        }
-        console.log(data);
-      });
+      this.log(
+        chalk.red(figlet.textSync("Error: ", { horizontalLayout: "full" }))
+      );
+      this.error(err.message);
     }
   }
 }

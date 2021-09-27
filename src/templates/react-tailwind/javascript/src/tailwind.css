@@ -1,0 +1,20 @@
+@tailwind base;
+/* Load the base css reset styles*/
+
+@layer base {
+  /* Add any custom styles to base layer */
+}
+
+@tailwind components;
+/* Load components styles */
+
+@layer components {
+  /* Add any custom styles to components layer */
+}
+
+@tailwind utilities;
+/* Load utilities styles */
+
+@layer utilities {
+  /* Add any custom styles to utilities layer */
+}
