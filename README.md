@@ -7,6 +7,8 @@ A Zero-config cli to help you bootstrap web projects
 [![Version](https://img.shields.io/npm/v/quick-strapper.svg)](https://www.npmjs.com/package/@sidwebworks/quick-strapper)
 [![Downloads/week](https://img.shields.io/npm/dw/quick-strapper.svg)](https://www.npmjs.com/package/@sidwebworks/quick-strapper)
 [![License](https://img.shields.io/npm/l/quick-strapper.svg)](https://github.com/sidwebworks/quick-strapper/blob/master/package.json)
+[![Contributors](https://img.shields.io/github/contributors/sidwebworks/quick-strapper)](https://github.com/sidwebworks/quick-strapper/blob/master/package.json)
+
 
 <!-- toc -->
 * [Usage](#usage)
