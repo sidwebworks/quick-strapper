@@ -1,7 +1,6 @@
-quick-strapper
-===========
+# Quick-strapper
 
-A Zero-config cli to help you bootstrap web projects
+A Zero-config cli to help you bootstrap web projects with best templates.
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/quick-strapper.svg)](https://www.npmjs.com/package/quick-strapper)
@@ -9,27 +8,36 @@ A Zero-config cli to help you bootstrap web projects
 [![License](https://img.shields.io/npm/l/quick-strapper.svg)](https://github.com/sidwebworks/quick-strapper/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Templates](#templates)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
-<!-- usage -->
-```sh-session
-$ npm install -g quick-strapper
-$ quick-strapper COMMAND
-running command...
-$ quick-strapper (-v|--version|version)
-quick-strapper/1.0.3 linux-x64 node-v14.17.6
-$ quick-strapper --help [COMMAND]
-USAGE
-  $ quick-strapper COMMAND
-...
+
+You can start using the CLI with `npx` just by this in your terminal:
+
+```shell
+npx quick-strapper create
 ```
-<!-- usagestop -->
+
+# Templates
+
+The CLI comes with some default templates, which are already used and tested and might be a perfect start for your project.
+
+- [React + Tailwindcss]("https://github.com/sidwebworks/quick-strapper/src/templates/react-tailwind")
+
+- [Node + Express API]("https://github.com/sidwebworks/quick-strapper/src/templates/express-api")
+
+#### If you have any templates or suggestions to improve these templates feel free to do a PR.
+
 # Commands
+
 <!-- commands -->
-* [`quick-strapper create [NAME]`](#quick-strapper-create-name)
-* [`quick-strapper help [COMMAND]`](#quick-strapper-help-command)
+
+- [`quick-strapper create [NAME]`](#quick-strapper-create-name)
+- [`quick-strapper help [COMMAND]`](#quick-strapper-help-command)
 
 ## `quick-strapper create [NAME]`
 
@@ -49,8 +57,6 @@ EXAMPLE
   $ quick-strapper create <project name>
 ```
 
-_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strapper/blob/v1.0.3/src/commands/create.js)_
-
 ## `quick-strapper help [COMMAND]`
 
 display help for quick-strapper
@@ -66,5 +72,4 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
 <!-- commandsstop -->
