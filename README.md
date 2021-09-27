@@ -8,10 +8,10 @@ A Zero-config cli to help you bootstrap web projects with best templates.
 [![License](https://img.shields.io/npm/l/quick-strapper.svg)](https://github.com/sidwebworks/quick-strapper/blob/master/package.json)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Templates](#templates)
-- [Commands](#commands)
+* [Quick-strapper](#quick-strapper)
+* [Usage](#usage)
+* [Templates](#templates)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
@@ -35,9 +35,8 @@ The CLI comes with some default templates, which are already used and tested and
 # Commands
 
 <!-- commands -->
-
-- [`quick-strapper create [NAME]`](#quick-strapper-create-name)
-- [`quick-strapper help [COMMAND]`](#quick-strapper-help-command)
+* [`quick-strapper create [NAME]`](#quick-strapper-create-name)
+* [`quick-strapper help [COMMAND]`](#quick-strapper-help-command)
 
 ## `quick-strapper create [NAME]`
 
@@ -57,6 +56,8 @@ EXAMPLE
   $ quick-strapper create <project name>
 ```
 
+_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strapper/blob/v1.0.4/src/commands/create.js)_
+
 ## `quick-strapper help [COMMAND]`
 
 display help for quick-strapper
@@ -72,4 +73,5 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
 <!-- commandsstop -->
