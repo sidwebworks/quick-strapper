@@ -60,7 +60,7 @@ EXAMPLE
   $ quick-strapper create <project name>
 ```
 
-_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strapper/blob/v1.0.5/src/commands/create.js)_
+_See code: [src/commands/create.js](https://github.com/sidwebworks/quick-strapper/blob/v1.0.6/src/commands/create.js)_
 
 ## `quick-strapper help [COMMAND]`
 
