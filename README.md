@@ -30,9 +30,9 @@ npx quick-strapper create
 
 The CLI comes with some default templates, which are already used and tested and might be a perfect start for your project.
 
-- [React + Tailwindcss]("https://github.com/sidwebworks/quick-strapper/src/templates/react-tailwind")
+- [React + Tailwindcss](https://github.com/sidwebworks/quick-strapper/src/templates/react-tailwind)
 
-- [Node + Express API]("https://github.com/sidwebworks/quick-strapper/src/templates/express-api")
+- [Node + Express API](https://github.com/sidwebworks/quick-strapper/src/templates/express-api)
 
 #### If you have any templates or suggestions to improve these templates feel free to do a PR.
 
