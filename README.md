@@ -20,7 +20,7 @@ A Zero-config cli to help you bootstrap web projects with best templates.
 
 # Usage
 
-You can start using the CLI with `npx` just by this in your terminal:
+You can start using the CLI with `npx` just by copy-pasting this in your terminal:
 
 ```shell
 npx quick-strapper create
