@@ -13,7 +13,7 @@ const loader = (app: Application) => {
 
     app.use(cors())
 
-    if (process.env['NODE_ENV'] !== 'production') {
+    if (process.env.NODE_ENV !== 'production') {
         app.use(morgan('dev'))
     }
 

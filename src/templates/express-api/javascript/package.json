@@ -2,15 +2,13 @@
     "name": "<%= projectName %>",
     "version": "1.0.0",
     "private": true,
-    "description": "",
     "main": "src/index.js",
-    "license": "ISC",
     "engines": {
         "node": ">=14.x"
     },
     "scripts": {
-        "start": "node index.js",
-        "dev": "nodemon index.js",
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js",
         "lint": "eslint --fix ."
     },
     "dependencies": {

@@ -174,7 +174,7 @@ class CreateCommand extends Command {
       );
     } catch (err) {
       this.log(
-        chalk.red(figlet.textSync("Error: ", { horizontalLayout: "full" }))
+        chalk.red(figlet.textSync("Error ", { horizontalLayout: "full" }))
       );
       this.error(err.message);
     }

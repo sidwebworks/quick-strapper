@@ -1,11 +1,8 @@
-const { Router } = require("express");
-const ExampleController = require("../controllers/example.controller");
+const { Router } = require('express')
+const helloController = require('../controllers/example.controller')
 
-const exampleRouter = Router();
+const exampleRouter = Router()
 
-exampleRouter.post("/", (req, res) => {
-  const greeting = ExampleController.sayHello(req.name || "Developer");
-  res.status(200).json({ greeting });
-});
+exampleRouter.all('/', helloController)
 
-module.exports = exampleRouter;
+module.exports = exampleRouter

@@ -30,7 +30,6 @@ const createProject = (templatePath, projectName) => {
 
     const writePath = path.join(CURRENT_DIR, projectName, file);
     if (origFilePath.includes("package.json")) {
-      console.log("origFilePath: ", origFilePath);
 
       let contents = fs.readFileSync(origFilePath, "utf8");
 

@@ -22,7 +22,7 @@ const handleDevError = (err: AppError, res: Response) => {
  */
 const handleProdError = (err: AppError, res: Response) => {
     if (err.isOperational) {
-        res.status(err.statusCode).json({
+       return res.status(err.statusCode).json({
             status: err.status,
             message: err.message,
         })

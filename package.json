@@ -1,7 +1,7 @@
 {
   "name": "quick-strapper",
   "description": "A Zero-config cli to help you bootstrap web projects",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "sidwebworks",
   "bin": {
     "quick-strapper": "bin/run"
@@ -12,14 +12,19 @@
   "bugs": "https://github.com/sidwebworks/quick-strapper/issues",
   "dependencies": {
     "@oclif/command": "^1.8.0",
+    "axios": "^0.22.0",
     "chalk": "^4.1.2",
+    "degit": "^2.8.4",
     "ejs": "^3.1.6",
     "execa": "^5.1.1",
     "figlet": "^1.5.2",
     "fs-extra": "^10.0.0",
+    "gittar": "^0.1.1",
     "inquirer": "^8.1.5",
     "listr": "^0.14.3",
-    "pkg-install": "^1.0.0"
+    "nodegit": "^0.27.0",
+    "pkg-install": "^1.0.0",
+    "shelljs": "^0.8.4"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1"
