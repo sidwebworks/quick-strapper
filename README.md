@@ -33,7 +33,7 @@ The CLI comes with some default templates, which are already used and tested and
 - [React + Tailwindcss](https://github.com/sidwebworks/quick-strapper/tree/master/src/templates/react-tailwind)
 
 - [Node + Express API](https://github.com/sidwebworks/quick-strapper/tree/master/src/templates/express-api)
-- 
+
 - [React Component Library](https://github.com/sidwebworks/quick-strapper/tree/master/src/templates/react-component-lib)
 
 #### If you have any templates or suggestions to improve these templates feel free to do a PR.
