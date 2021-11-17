@@ -1,8 +1,0 @@
-### THIS DOCS ASSUMES THAT YOU HAVE VS CODE REST CLIENT EXTENSION INSTALLED
-
-POST http://localhost:3000
-Content-Type: application/json
-
-{
-    "name": "Sid"
-}
