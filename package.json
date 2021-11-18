@@ -4,6 +4,7 @@
 	"version": "1.0.0",
 	"author": "sidwebworks",
 	"main": "index.js",
+	
 	"bin": {
 		"quick-strapper": "index.js"
 	},
@@ -11,9 +12,13 @@
 		"index.js",
 		"src"
 	],
-	"publishConfig": {
-		"access": "public"
-	},
+	 "repository": {
+          "type": "git",
+   	  "url": "git+https://github.com/sidwebworks/quick-strapper.git"
+    	},
+	 "github": {
+      "release": true
+    },
 	"license": "MIT",
 	"dependencies": {
 		"degit": "^2.8.4",
